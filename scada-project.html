@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCADA-Style Wireless Sensor Network | Olusegun Israel Olajire</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['Fira Code', 'monospace'],
+                    },
+                    colors: {
+                        dark: '#0f172a', // slate-900
+                        darker: '#020617', // slate-950
+                        accent: '#06b6d4', // cyan-500
+                        accentHover: '#0891b2', // cyan-600
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #020617; }
+        ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #06b6d4; }
+    </style>
+</head>
+<body class="bg-darker text-slate-300 font-sans antialiased selection:bg-accent selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-darker/90 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-slate-400 hover:text-white font-medium flex items-center transition-colors">
+                        <i class="fas fa-arrow-left mr-2 text-accent"></i> Back to Portfolio
+                    </a>
+                </div>
+                <div class="text-white font-bold text-xl font-mono tracking-tighter hidden sm:block">
+                    <span class="text-accent">&lt;</span>Olusegun Israel Olajire<span class="text-accent">/&gt;</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Hero Section -->
+    <header class="pt-32 pb-16 px-4 border-b border-slate-800 bg-dark">
+        <div class="max-w-4xl mx-auto">
+            <div class="flex items-center mb-4">
+                <i class="fas fa-network-wired text-4xl text-accent mr-4"></i>
+                <h1 class="text-4xl md:text-5xl font-bold text-white tracking-tight">SCADA-Style Wireless Sensor Network</h1>
+            </div>
+            <p class="text-xl text-slate-400 mt-4 leading-relaxed max-w-3xl">
+                A multi-microcontroller robust wireless system engineered for low-latency remote monitoring and physical actuation without reliance on traditional Wi-Fi infrastructure.
+            </p>
+            <div class="flex flex-wrap gap-3 mt-8">
+                <span class="bg-slate-800 text-accent border border-slate-700 px-3 py-1 rounded-full text-sm font-mono">ESP-NOW</span>
+                <span class="bg-slate-800 text-slate-300 border border-slate-700 px-3 py-1 rounded-full text-sm font-mono">ESP32 (S3/C3)</span>
+                <span class="bg-slate-800 text-slate-300 border border-slate-700 px-3 py-1 rounded-full text-sm font-mono">Arduino UNO</span>
+                <span class="bg-slate-800 text-slate-300 border border-slate-700 px-3 py-1 rounded-full text-sm font-mono">C/C++</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="py-16 px-4">
+        <div class="max-w-4xl mx-auto space-y-16">
+
+            <!-- Project Overview -->
+            <section>
+                <h2 class="text-2xl font-bold text-white mb-6 flex items-center">
+                    <span class="text-accent font-mono mr-3">01.</span> Project Overview
+                </h2>
+                <div class="prose prose-invert max-w-none text-slate-400 leading-relaxed">
+                    <p>
+                        In industrial and isolated environments, traditional Wi-Fi networks can be unreliable, power-hungry, or completely unavailable. This project bridges that gap by implementing a SCADA-like (Supervisory Control and Data Acquisition) architecture using local, low-overhead peer-to-peer communication. 
+                    </p>
+                    <p class="mt-4">
+                        The system comprises distributed sensor nodes that collect environmental data and transmit it instantaneously to central actuator nodes capable of triggering high-voltage or mechanical systems via relays. This was entirely prototyped on breadboards, allowing for rapid real-world testing of signal integrity and physical component interaction.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Media Placeholder 1 -->
+            <div class="w-full aspect-video bg-slate-800/50 border-2 border-dashed border-slate-700 rounded-xl flex flex-col items-center justify-center text-slate-500 hover:border-accent hover:text-accent transition-colors cursor-crosshair">
+                <i class="fas fa-camera text-4xl mb-3"></i>
+                <p class="font-mono text-sm">[ Placeholder: High-quality photo of the breadboard assembly ]</p>
+            </div>
+
+            <!-- Architecture & Hardware -->
+            <section>
+                <h2 class="text-2xl font-bold text-white mb-6 flex items-center">
+                    <span class="text-accent font-mono mr-3">02.</span> System Architecture & Hardware
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-dark p-6 rounded-lg border border-slate-800">
+                        <i class="fas fa-microchip text-2xl text-accent mb-4"></i>
+                        <h3 class="text-lg font-bold text-white mb-2">Node Communication (ESP32)</h3>
+                        <p class="text-slate-400 text-sm">
+                            Utilized <strong>ESP32-S3</strong> and <strong>ESP32-C3</strong> microcontrollers as the primary communicators. Their dual-core architecture (S3) and RISC-V efficiency (C3) handled data acquisition and wireless transmission seamlessly.
+                        </p>
+                    </div>
+                    <div class="bg-dark p-6 rounded-lg border border-slate-800">
+                        <i class="fas fa-cogs text-2xl text-accent mb-4"></i>
+                        <h3 class="text-lg font-bold text-white mb-2">Actuation Node (Arduino)</h3>
+                        <p class="text-slate-400 text-sm">
+                            An <strong>Arduino UNO</strong> served as the local logic controller for actuation, interpreting signals from the ESP network to drive mechanical outputs safely and deterministically.
+                        </p>
+                    </div>
+                    <div class="bg-dark p-6 rounded-lg border border-slate-800">
+                        <i class="fas fa-bolt text-2xl text-accent mb-4"></i>
+                        <h3 class="text-lg font-bold text-white mb-2">Power Switching (Relays)</h3>
+                        <p class="text-slate-400 text-sm">
+                            Integrated <strong>5V Relay Modules</strong> to allow low-voltage microcontrollers to safely isolate and control higher voltage/current loads, simulating industrial control scenarios.
+                        </p>
+                    </div>
+                    <div class="bg-dark p-6 rounded-lg border border-slate-800">
+                        <i class="fas fa-tools text-2xl text-accent mb-4"></i>
+                        <h3 class="text-lg font-bold text-white mb-2">Prototyping</h3>
+                        <p class="text-slate-400 text-sm">
+                            Extensive <strong>breadboard assembly</strong> and multimeter testing were conducted to verify logic levels, ensure sufficient current delivery to relays, and eliminate ground loops.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Communication & Software -->
+            <section class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-2xl font-bold text-white mb-6 flex items-center">
+                        <span class="text-accent font-mono mr-3">03.</span> Protocol
+                    </h2>
+                    <p class="text-slate-400 leading-relaxed">
+                        The backbone of the system's speed is the <strong>ESP-NOW</strong> protocol. By bypassing standard Wi-Fi router association and DHCP handshake processes, ESP-NOW allowed the nodes to communicate using connectionless MAC-to-MAC packet transmission. This resulted in sub-millisecond latency and highly reliable data transfer over considerable distances.
+                    </p>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold text-white mb-6 flex items-center">
+                        <span class="text-accent font-mono mr-3">04.</span> Software & Tools
+                    </h2>
+                    <p class="text-slate-400 leading-relaxed mb-4">
+                        The entire firmware stack was written in <strong>C/C++</strong> using the <strong>Arduino IDE</strong>. 
+                    </p>
+                    <ul class="space-y-2 text-slate-400">
+                        <li><i class="fas fa-check text-accent mr-2"></i> Custom struct definitions for standardized packet payloads.</li>
+                        <li><i class="fas fa-check text-accent mr-2"></i> Non-blocking state machines (`millis()` based) for sensor polling.</li>
+                        <li><i class="fas fa-check text-accent mr-2"></i> Serial debugging and memory management.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Media Placeholder 2 -->
+            <div class="w-full aspect-[21/9] bg-slate-800/50 border-2 border-dashed border-slate-700 rounded-xl flex flex-col items-center justify-center text-slate-500 hover:border-accent hover:text-accent transition-colors cursor-crosshair">
+                <i class="fas fa-project-diagram text-4xl mb-3"></i>
+                <p class="font-mono text-sm">[ Placeholder: System Architecture / Circuit Schematic Diagram ]</p>
+            </div>
+
+            <!-- Call to Action -->
+            <section class="text-center pt-8 border-t border-slate-800">
+                <h3 class="text-2xl font-bold text-white mb-6">Dive into the Code</h3>
+                <a href="https://github.com/Eazino10/scada-network" target="_blank" class="inline-flex items-center justify-center bg-accent hover:bg-accentHover text-white font-semibold py-3 px-8 rounded-lg transition duration-300 shadow-[0_0_15px_rgba(6,182,212,0.4)]">
+                    <i class="fab fa-github text-xl mr-3"></i> View Repository on GitHub
+                </a>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-darker border-t border-slate-800 text-center">
+        <p class="text-slate-500 font-mono text-sm">
+            &copy; <span id="year"></span> Olusegun Israel Olajire. All rights reserved.
+        </p>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
