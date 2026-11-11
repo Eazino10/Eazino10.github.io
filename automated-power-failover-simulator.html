@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automated Power Failover Simulator | Olusegun Israel Olajire</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --accent: #38bdf8;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --border: #334155;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            color: var(--accent);
+            font-size: 2.2rem;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+
+        .badge-container {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+
+        .badge {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            padding: 4px 12px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            color: var(--accent);
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 24px;
+            margin-bottom: 24px;
+        }
+
+        h2 {
+            color: var(--text-main);
+            border-bottom: 2px solid var(--accent);
+            display: inline-block;
+            padding-bottom: 4px;
+            margin-top: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            color: var(--accent);
+        }
+
+        pre {
+            background: #020617;
+            padding: 16px;
+            border-radius: 6px;
+            overflow-x: auto;
+            border: 1px solid var(--border);
+        }
+
+        code {
+            font-family: 'Fira Code', Consolas, Monaco, monospace;
+            color: #38bdf8;
+        }
+
+        .footer {
+            text-align: center;
+            color: var(--text-muted);
+            margin-top: 60px;
+            font-size: 0.9rem;
+            border-top: 1px solid var(--border);
+            padding-top: 20px;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Microcontroller Automated Power Failover Simulator</h1>
+        <div class="subtitle">Dual-Node Low-Latency ESP-NOW Power Redundancy Architecture</div>
+        <div class="badge-container">
+            <span class="badge">ESP32-S3</span>
+            <span class="badge">ESP32-C3 (RISC-V)</span>
+            <span class="badge">ESP-NOW Protocol</span>
+            <span class="badge">C++</span>
+            <span class="badge">Galaxy Backbone SIWES Demo</span>
+        </div>
+    </header>
+
+    <div class="card">
+        <h2>Executive Summary</h2>
+        <p>A hardware-in-the-loop power redundancy telemetry system designed to simulate grid loss detection and automated uninterruptible power supply (UPS) failover. Engineered specifically for mission-critical IT infrastructure and high-availability data centers (e.g., Galaxy Backbone Tier III / Tier IV facilities).</p>
+    </div>
+
+    <div class="card">
+        <h2>Hardware Pinouts</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Peripheral / Function</th>
+                    <th>ESP32-S3 (Monitor Node)</th>
+                    <th>ESP32-C3 (Actuator Node)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Role</td>
+                    <td>Grid Monitor & HMI Telemetry</td>
+                    <td>Relay Actuator Control</td>
+                </tr>
+                <tr>
+                    <td>Mains Status Input</td>
+                    <td>GPIO 4 (Internal Pull-Up)</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td>5V Relay Signal (IN)</td>
+                    <td>N/A</td>
+                    <td>GPIO 4</td>
+                </tr>
+                <tr>
+                    <td>I2C Display (OLED 0.96")</td>
+                    <td>SDA: GPIO 8 | SCL: GPIO 9</td>
+                    <td>N/A</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="card">
+        <h2>Repository Links</h2>
+        <p>Explore the full source code and documentation on GitHub:</p>
+        <p>👉 <a href="https://github.com/Eazino10" target="_blank">GitHub Profile (Eazino10)</a></p>
+    </div>
+
+    <div class="footer">
+        Developed by <strong>Olusegun Israel Olajire</strong> | 300-Level Computer Engineering, UNILAG
+    </div>
+</div>
+
+</body>
+</html>
