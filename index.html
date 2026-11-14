@@ -181,92 +181,92 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="py-20 px-4">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl md:text-4xl font-bold text-white mb-12 flex items-center">
-                <span class="text-accent font-mono text-xl md:text-2xl mr-3">02.</span> Featured Projects
-                <div class="ml-6 h-px bg-slate-700 flex-grow"></div>
-            </h2>
+  <!-- Projects Section -->
+<section id="projects" class="py-20 px-4">
+    <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-12 flex items-center">
+            <span class="text-accent font-mono text-xl md:text-2xl mr-3">02.</span> Featured Projects
+            <div class="ml-6 h-px bg-slate-700 flex-grow"></div>
+        </h2>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                
-                <!-- Project 1 -->
-                <div class="bg-dark rounded-xl border border-slate-800 overflow-hidden hover:-translate-y-2 hover:shadow-[0_10px_30px_-15px_rgba(6,182,212,0.3)] transition-all duration-300 flex flex-col h-full group">
-                    <div class="p-6 flex-grow">
-                        <div class="flex justify-between items-center mb-4">
-                            <i class="fas fa-network-wired text-3xl text-accent"></i>
-                            <a href="#" class="text-slate-400 hover:text-accent transition-colors"><i class="fab fa-github text-xl"></i></a>
-                        </div>
-                        <h3 class="text-xl font-bold text-white mb-3 group-hover:text-accent transition-colors">SCADA-Style Wireless Sensor Network</h3>
-                        <p class="text-slate-400 text-sm mb-4">
-                            Engineered a multi-microcontroller wireless system using ESP-NOW to link ESP32-S3 and ESP32-C3 nodes with an Arduino UNO actuator node. Integrated 5V relay modules for robust remote monitoring and control.
-                        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Project 1: Automated Power Failover Simulator (New Sub-Page Link) -->
+            <div class="bg-dark rounded-xl border border-slate-800 overflow-hidden hover:-translate-y-2 hover:shadow-[0_10px_30px_-15px_rgba(6,182,212,0.3)] transition-all duration-300 flex flex-col h-full group">
+                <div class="p-6 flex-grow">
+                    <div class="flex justify-between items-center mb-4">
+                        <i class="fas fa-bolt text-3xl text-accent"></i>
+                        <a href="automated-power-failover-simulator.html" class="text-slate-400 hover:text-accent transition-colors"><i class="fas fa-external-link-alt text-xl"></i></a>
                     </div>
-                    <div class="px-6 pb-6 mt-auto">
-                        <ul class="flex flex-wrap gap-2 text-xs font-mono text-slate-500 mb-4">
-                            <li class="bg-slate-800 px-2 py-1 rounded">ESP-NOW</li>
-                            <li class="bg-slate-800 px-2 py-1 rounded">ESP32</li>
-                            <li class="bg-slate-800 px-2 py-1 rounded">Arduino</li>
-                            <li class="bg-slate-800 px-2 py-1 rounded">C++</li>
-                        </ul>
-                        <a href="scada-project.html" target="_blank" class="block w-full text-center bg-slate-800 hover:bg-slate-700 text-slate-300 py-2 rounded transition-colors text-sm font-medium">
-                            <i class="fab fa-github mr-2"></i>View Code
-                        </a>
-                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-accent transition-colors">Automated Power Failover Simulator</h3>
+                    <p class="text-slate-400 text-sm mb-4">
+                        Dual-node IoT telemetry system built with ESP32-S3 and ESP32-C3 using ESP-NOW. Simulates grid loss detection and automated relay failover for high-availability data centers.
+                    </p>
                 </div>
-
-                <!-- Project 2 -->
-                <div class="bg-dark rounded-xl border border-slate-800 overflow-hidden hover:-translate-y-2 hover:shadow-[0_10px_30px_-15px_rgba(6,182,212,0.3)] transition-all duration-300 flex flex-col h-full group">
-                    <div class="p-6 flex-grow">
-                        <div class="flex justify-between items-center mb-4">
-                            <i class="fas fa-chart-line text-3xl text-accent"></i>
-                            <a href="#" class="text-slate-400 hover:text-accent transition-colors"><i class="fab fa-github text-xl"></i></a>
-                        </div>
-                        <h3 class="text-xl font-bold text-white mb-3 group-hover:text-accent transition-colors">Automated Algorithmic Trading System</h3>
-                        <p class="text-slate-400 text-sm mb-4">
-                            Developed custom algorithmic trading indicators and automated execution scripts. Implemented multi-timeframe analysis, ATR-based risk management, and dynamic take-profit levels for optimized market entry.
-                        </p>
-                    </div>
-                    <div class="px-6 pb-6 mt-auto">
-                        <ul class="flex flex-wrap gap-2 text-xs font-mono text-slate-500 mb-4">
-                            <li class="bg-slate-800 px-2 py-1 rounded">Pine Script</li>
-                            <li class="bg-slate-800 px-2 py-1 rounded">MQL5</li>
-                            <li class="bg-slate-800 px-2 py-1 rounded">MT5</li>
-                        </ul>
-                        <a href="https://github.com/Eazino10/algo-trading" target="_blank" class="block w-full text-center bg-slate-800 hover:bg-slate-700 text-slate-300 py-2 rounded transition-colors text-sm font-medium">
-                            <i class="fab fa-github mr-2"></i>View Code
-                        </a>
-                    </div>
+                <div class="px-6 pb-6 mt-auto">
+                    <ul class="flex flex-wrap gap-2 text-xs font-mono text-slate-500 mb-4">
+                        <li class="bg-slate-800 px-2 py-1 rounded">ESP32-S3/C3</li>
+                        <li class="bg-slate-800 px-2 py-1 rounded">ESP-NOW</li>
+                        <li class="bg-slate-800 px-2 py-1 rounded">Relays</li>
+                        <li class="bg-slate-800 px-2 py-1 rounded">C++</li>
+                    </ul>
+                    <a href="automated-power-failover-simulator.html" class="block w-full text-center bg-slate-800 hover:bg-slate-700 text-slate-300 py-2 rounded transition-colors text-sm font-medium">
+                        <i class="fas fa-microchip mr-2"></i>Explore Project Page
+                    </a>
                 </div>
-
-                <!-- Project 3 -->
-                <div class="bg-dark rounded-xl border border-slate-800 overflow-hidden hover:-translate-y-2 hover:shadow-[0_10px_30px_-15px_rgba(6,182,212,0.3)] transition-all duration-300 flex flex-col h-full group">
-                    <div class="p-6 flex-grow">
-                        <div class="flex justify-between items-center mb-4">
-                            <i class="fas fa-volume-up text-3xl text-accent"></i>
-                            <a href="#" class="text-slate-400 hover:text-accent transition-colors"><i class="fas fa-external-link-alt text-xl"></i></a>
-                        </div>
-                        <h3 class="text-xl font-bold text-white mb-3 group-hover:text-accent transition-colors">Standalone Audio Amp & Bluetooth</h3>
-                        <p class="text-slate-400 text-sm mb-4">
-                            Designed and constructed a discrete transistor stereo audio amplifier paired with an ESP32-based Bluetooth audio receiver. Focus on circuit design, signal processing, and low-latency wireless audio streaming.
-                        </p>
-                    </div>
-                    <div class="px-6 pb-6 mt-auto">
-                        <ul class="flex flex-wrap gap-2 text-xs font-mono text-slate-500 mb-4">
-                            <li class="bg-slate-800 px-2 py-1 rounded">ESP32</li>
-                            <li class="bg-slate-800 px-2 py-1 rounded">Hardware Design</li>
-                            <li class="bg-slate-800 px-2 py-1 rounded">BJT</li>
-                        </ul>
-                        <a href="https://github.com/Eazino10/audio-amp" target="_blank" class="block w-full text-center bg-slate-800 hover:bg-slate-700 text-slate-300 py-2 rounded transition-colors text-sm font-medium">
-                            <i class="fas fa-microchip mr-2"></i>View Details
-                        </a>
-                    </div>
-                </div>
-
             </div>
+
+            <!-- Project 2 -->
+            <div class="bg-dark rounded-xl border border-slate-800 overflow-hidden hover:-translate-y-2 hover:shadow-[0_10px_30px_-15px_rgba(6,182,212,0.3)] transition-all duration-300 flex flex-col h-full group">
+                <div class="p-6 flex-grow">
+                    <div class="flex justify-between items-center mb-4">
+                        <i class="fas fa-chart-line text-3xl text-accent"></i>
+                        <a href="https://github.com/Eazino10/algo-trading" target="_blank" class="text-slate-400 hover:text-accent transition-colors"><i class="fab fa-github text-xl"></i></a>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-accent transition-colors">Automated Algorithmic Trading System</h3>
+                    <p class="text-slate-400 text-sm mb-4">
+                        Developed custom algorithmic trading indicators and automated execution scripts. Implemented multi-timeframe analysis, ATR-based risk management, and dynamic take-profit levels for optimized market entry.
+                    </p>
+                </div>
+                <div class="px-6 pb-6 mt-auto">
+                    <ul class="flex flex-wrap gap-2 text-xs font-mono text-slate-500 mb-4">
+                        <li class="bg-slate-800 px-2 py-1 rounded">Pine Script</li>
+                        <li class="bg-slate-800 px-2 py-1 rounded">MQL5</li>
+                        <li class="bg-slate-800 px-2 py-1 rounded">MT5</li>
+                    </ul>
+                    <a href="https://github.com/Eazino10/algo-trading" target="_blank" class="block w-full text-center bg-slate-800 hover:bg-slate-700 text-slate-300 py-2 rounded transition-colors text-sm font-medium">
+                        <i class="fab fa-github mr-2"></i>View Code
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="bg-dark rounded-xl border border-slate-800 overflow-hidden hover:-translate-y-2 hover:shadow-[0_10px_30px_-15px_rgba(6,182,212,0.3)] transition-all duration-300 flex flex-col h-full group">
+                <div class="p-6 flex-grow">
+                    <div class="flex justify-between items-center mb-4">
+                        <i class="fas fa-volume-up text-3xl text-accent"></i>
+                        <a href="https://github.com/Eazino10/audio-amp" target="_blank" class="text-slate-400 hover:text-accent transition-colors"><i class="fas fa-external-link-alt text-xl"></i></a>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-accent transition-colors">Standalone Audio Amp & Bluetooth</h3>
+                    <p class="text-slate-400 text-sm mb-4">
+                        Designed and constructed a discrete transistor stereo audio amplifier paired with an ESP32-based Bluetooth audio receiver. Focus on circuit design, signal processing, and low-latency wireless audio streaming.
+                    </p>
+                </div>
+                <div class="px-6 pb-6 mt-auto">
+                    <ul class="flex flex-wrap gap-2 text-xs font-mono text-slate-500 mb-4">
+                        <li class="bg-slate-800 px-2 py-1 rounded">ESP32</li>
+                        <li class="bg-slate-800 px-2 py-1 rounded">Hardware Design</li>
+                        <li class="bg-slate-800 px-2 py-1 rounded">BJT</li>
+                    </ul>
+                    <a href="https://github.com/Eazino10/audio-amp" target="_blank" class="block w-full text-center bg-slate-800 hover:bg-slate-700 text-slate-300 py-2 rounded transition-colors text-sm font-medium">
+                        <i class="fas fa-microchip mr-2"></i>View Details
+                    </a>
+                </div>
+            </div>
+
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Contact & Footer -->
     <section id="contact" class="py-20 bg-dark border-t border-slate-800 px-4">
