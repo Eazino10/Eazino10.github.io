@@ -94,10 +94,47 @@
             </section>
 
             <!-- Media Placeholder 1 -->
-            <div class="w-full aspect-video bg-slate-800/50 border-2 border-dashed border-slate-700 rounded-xl flex flex-col items-center justify-center text-slate-500 hover:border-accent hover:text-accent transition-colors cursor-crosshair">
-                <i class="fas fa-camera text-4xl mb-3"></i>
-                <p class="font-mono text-sm">[ Placeholder: Photo of the Dual-ESP32 Breadboard Rig with OLED &amp; TFT Displays Active ]</p>
-            </div>
+            <!-- 1. FULL SETUP PHOTO (Replaces Media Placeholder 1) -->
+<figure class="w-full bg-dark border border-slate-800 rounded-xl overflow-hidden shadow-lg">
+    <img
+        src="assets/full-setup.jpg"
+        alt="Full dual-ESP32 breadboard workbench showing ESP32-D0WD-V3 signal generator, ESP32-S3 logic analyzer, OLED, and TFT displays"
+        class="w-full aspect-video object-cover"
+    >
+    <figcaption class="px-4 py-3 text-xs font-mono text-slate-400 border-t border-slate-800">
+        Full Workbench Rig: ESP32-D0WD-V3 stimulus generator paired with ESP32-S3 4-channel logic analyzer.
+    </figcaption>
+</figure>
+
+<!-- 2. TWO SCREEN PICTURES (OLED & ST7735 TFT) -->
+<section>
+    <h2 class="text-2xl font-bold text-white mb-6 flex items-center">
+        <span class="text-accent font-mono mr-3">02b.</span> Display &amp; Telemetry Captures
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <figure class="bg-dark border border-slate-800 rounded-xl overflow-hidden shadow-lg">
+            <img
+                src="assets/oled-display.jpg"
+                alt="128x64 SSD1306 OLED screen showing live generator frame count and rotary menu settings"
+                class="w-full aspect-video object-cover"
+            >
+            <figcaption class="px-4 py-3 text-xs font-mono text-slate-400 border-t border-slate-800">
+                SSD1306 OLED (0x3C): Live generator status, frame counter, and encoder parameters.
+            </figcaption>
+        </figure>
+
+        <figure class="bg-dark border border-slate-800 rounded-xl overflow-hidden shadow-lg">
+            <img
+                src="assets/tft-display.jpg"
+                alt="1.44-inch ST7735 TFT display showing 4-channel logic waveforms and decoded protocol telemetry"
+                class="w-full aspect-video object-cover"
+            >
+            <figcaption class="px-4 py-3 text-xs font-mono text-slate-400 border-t border-slate-800">
+                1.44" ST7735 TFT: 4-channel waveform sweep with live I2C, UART, and PWM decoding.
+            </figcaption>
+        </figure>
+    </div>
+</section>
 
             <!-- Architecture & Hardware -->
             <section>
